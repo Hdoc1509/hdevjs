@@ -27,6 +27,21 @@ export class VerifyThis {
 	 * @param {?Number} rules.maxChars - Validate the maximun quantity of characters
 	 * @param {String} rules.alias - An alias that helps to recognize fails in case of errors
 	 * @param {Array<String>} rules.allowedChars - Validate the allowed chars
+	 * @example
+	 * // Throw a type error
+	 * VerifyThis.string(1, {});
+	 * // Throw an error, string is empty
+	 * VerifyThis.string("", {});
+	 * // Throw an error, string has less than 5 characters
+	 * VerifyThis.string("Word", {minChars: 5});
+	 * // Throw an error, string has more than 8 characters
+	 * VerifyThis.string("Programming", {maxChars: 8});
+	 * // Throw an error, entered character is not allowed
+	 * VerifyThis.string("f", {maxChars: 1, allowedChars: ["a", "b", "c"]});
+	 * // Will not throw an error
+	 * VerifyThis.string("JavaScript", {minChars: 2, maxChars: 10});
+	 * // Can use an alias that will be used in case of errors
+	 * VerifyThis.string("Python", {alias: "Programming Language", maxChars: 4});
 	 */
 	static string(
 		str,
