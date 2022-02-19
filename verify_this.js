@@ -10,7 +10,7 @@
  * CHANGELOG
  * --------
  * v1.0          	First version of VerifyThisJS
- * 12-02-2022
+ * 19-02-2022
  * --------
  * 
  * First version of VerifyThisJS was written by Héctor Ochoa

@@ -10,7 +10,7 @@
  * CHANGELOG
  * --------
  * v1.0            First version of ArrayFunJS
- * 12-02-2022
+ * 19-02-2022
  * --------
  * 
  * First version of ArrayFunJS was written by Héctor Ochoa
