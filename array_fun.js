@@ -10,7 +10,7 @@
  * CHANGELOG
  * --------
  * v1.0            First version of ArrayFunJS
- * 19-02-2022
+ * 25-02-2022
  * --------
  * 
  * First version of ArrayFunJS was written by Héctor Ochoa
@@ -52,17 +52,6 @@ export class ArrayFun extends Array {
 
   randSort() {
     VerifyThis.array(this, {minElements: 2});
-
-    /*let el = this.randElement();
-    const aux = [];
-
-    for (let i = 0; i < this.length; i++) {
-      while (aux.includes(el)) el = this.randElement();
-
-      aux.push(el);
-    }
-
-    return aux;*/
 
     return this.sort((a, b) => Math.random() - 0.5);
   }
